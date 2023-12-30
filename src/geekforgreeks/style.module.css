@@ -1,0 +1,86 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 80vh;
+    width: 500px;
+    background-color: green;
+    overflow: hidden;
+    position: relative;
+}
+.box1{
+    z-index: 1;
+    height: 80px;
+    width: 500px;
+    background-color: black;
+    color: white;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+}  
+.box1 h1{
+    /* border: 2px solid red; */
+    padding-left: 20px;
+}  
+.icon{
+    height: 100%;
+    width: 70px;
+    font-size: 40px;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s cubic-bezier(.27,-0.6,.68,1.95);
+}
+.rotate
+{
+    transform: rotate(90deg);
+}
+ .icon:hover {
+    /* background-color: white; */
+    color: white    ;
+}
+.box2{
+    z-index: 0;
+    /* border: 2px solid red; */
+    margin-top: 80px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    visibility: hidden;
+    transform: translateY(-100%);
+    transition: 0.5s all;
+    /* transform-origin:50% 0% ; */
+}
+.visible{
+    visibility: visible;
+    transform:translateY(0%);
+}
+.box2 ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.box2 ul li{
+   list-style: none;
+   /* border:2px solid blue; */
+   height: 100%;
+   display: flex;
+   align-items: center;
+   font-size: 22px;
+   padding-left: 20px;
+}
+.box2 ul li:hover{
+    background-color: white;
+    color: black;
+}

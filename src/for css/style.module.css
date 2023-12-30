@@ -1,0 +1,52 @@
+.container{
+    width: 99vw;
+    height:97vh;
+    /* border: 2px solid red; */
+    font-family: sans-serif;
+    background-color:#dadada;
+    
+}
+.badabox{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15%;
+}
+.logo:hover{
+    background-color:rgb(100, 100, 255) ;
+}
+.boxcontainer{
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px solid red; */
+    width: 50%;
+    font-size: 25px;
+    align-items: center;
+    height: 100%;
+}
+.box{
+    height: 100%;
+    flex: 1;
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: relative; */
+
+}
+.box:hover {
+ background-color: rgb(100, 100, 255);
+}
+
+.dark
+{
+    background-color: black;
+    color: white;
+}
+
+.light
+{
+    background-color: white;
+    color: black;
+}
